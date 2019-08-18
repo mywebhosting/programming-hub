@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Programming hub</title>
+	<link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="asset/css/custom/index_custom.css">
+
+	<!-- Push this css -->
+	<link rel="stylesheet" type="text/css" href="asset/css/custom/profile.css">
+	<link rel="stylesheet" type="text/css" href="asset/css/custom/learning.css">
+	<link rel="stylesheet" type="text/css" href="asset/css/custom/project.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="asset/slider/engine1/style.css" />
+	<script type="text/javascript" src="asset/slider/engine1/jquery.js"></script>
+</head>
+<body>
+
+<!-- -------------------------------	MENU	------------------------------------------ -->
+<section class="top_menu">
+	<div class="d-none d-md-block container-fluid">
+		<div class="row">
+			<div class="col-md-4 ">
+				<div class="logo"><img src="asset/image/index.png"></div>
+			</div>
+			<div class="col-md-8">
+				<div class="menu">
+					<ul>
+						<li><a href="#" class="active">Home</a></li>
+						<li><a href="#">About Me</a></li>
+						<li><a href="#">Learning</a></li>
+						<li><a href="#project">Projects</a></li>
+						<li><a href="#contact">Contact Us</a></li>
+						<li><a href="#">Login/Registration</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- -------------------------	Responsive	------------------------------------- -->
+	<div class="d-block d-md-none container-fluid">
+		<div class="row">
+			<div class="col-sm-4 col-4">
+				<div class="logo"><img src="asset/image/index.png"></div>
+			</div>
+			<div class="col-sm-8 col-8">
+				<div class="menu">
+					<i class="fas fa-bars menu_show" onclick="return show_menu();"></i>
+					<i class="fas fa-times menu_close" onclick="return hide_menu();" style="display: none;"></i>
+				</div>
+			</div>
+			<div class="resp_menu">
+				<ul>
+					<li><a href="#" class="active">Home</a></li>
+					<li><a href="#">About Me</a></li>
+					<li><a href="#">Learning</a></li>
+					<li><a href="#project">Projects</a></li>
+					<li><a href="#contact">Contact Us</a></li>
+					<li><a href="#">Login/Registration</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- -------------------------	Responsive End	--------------------------------- -->
+</section>
+<!-- -------------------------------	MENU End	-------------------------------------- -->
+<section class="gap"></section>
+
+<!-- -------------------------------	Learning	-------------------------------------- -->
+<section class="aboutme">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<div class="row">
+					<div class="col-md-12 title_area">
+						<span>Profile settings</span>
+						<hr />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 details_area">
+						<div class="accordion" id="accordionExample">
+							<div class="card custom_card">
+								<div class="card-header heading_style" id="headingOne">
+									<h2 class="mb-0">
+										<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Your Details</button>
+									</h2>
+								</div>
+
+								<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+									<div class="card-body card_detils">
+										<span class="error">All fields are metetory</span>
+										<div class="row">
+											<div class="col-md-3"></div>
+											<div class="col-md-6">
+												<div class="row">
+													<div class="col-md-6 col-sm-6">
+														<input type="text" name="" placeholder="First name">
+													</div>
+													<div class="col-md-6 col-sm-6">
+														<input type="text" name="" placeholder="Last Name">
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-12 col-sm-12">
+														<input type="text" name="" placeholder="Email Id">
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-6 col-sm-6">
+														<input type="text" name="" placeholder="Alternet Email Id">
+													</div>
+													<div class="col-md-6 col-sm-6">
+														<input type="text" name="" placeholder="Verification OTP">
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-6 col-sm-6">
+														<input type="text" name="" placeholder="Phone Number">
+													</div>
+													<div class="col-md-6 col-sm-6">
+														<input type="text" name="" placeholder="Verification OTP">
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-6 col-sm-6">
+														<input type="text" name="" placeholder="Alternet Phone Number">
+													</div>
+													<div class="col-md-6 col-sm-6">
+														<input type="text" name="" placeholder="Verification OTP">
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-6 col-sm-6">
+														<!-- <input type="text" name="" placeholder="Highest Qulification"> -->
+														<select>
+															<option>-- Select Qulification --</option>
+															<option>Posr Gratution</option>
+														</select>
+													</div>
+													<div class="col-md-6 col-sm-6">
+														<input type="text" name="" placeholder="Institute / School">
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-4 col-sm-4">Profile Picture</div>
+													<div class="col-md-5 col-sm-5">
+														<input type="file" name="" placeholder="Highest Qulification">
+													</div>
+													<div class="col-md-3 col-sm-3">
+														<img src="#">
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-12">
+														<input type="submit" name="" value="Submit">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-3"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card custom_card">
+								<div class="card-header heading_style" id="headingTwo">
+									<h2 class="mb-0">
+										<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Viewed item</button>
+									</h2>
+								</div>
+								<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+									<div class="card-body card_detils">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="row">
+													<div class="col-md-4 space">
+														<a href="" class="language_a">
+															<div class="language">
+																<div class="language_title">C++</div>
+															</div>
+														</a>
+													</div>
+													<div class="col-md-4 space">
+														<a href="" class="language_a">
+															<div class="language">
+																<div class="language_title">C</div>
+															</div>
+														</a>
+													</div>
+													<div class="col-md-4 space">
+														<a href="" class="language_a">
+															<div class="language">
+																<div class="language_title">PHP</div>
+															</div>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card custom_card">
+								<div class="card-header heading_style" id="headingThree">
+									<h2 class="mb-0">
+										<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapsethree">Viewed project</button>
+									</h2>
+								</div>
+								<div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+									<div class="card-body card_detils">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="row">
+													<div class="col-md-4 space">
+														<a href="" class="language_a">
+															<div class="language">
+																<div class="language_title">Online photo gallary system</div>
+															</div>
+														</a>
+													</div>
+													<div class="col-md-4 space">
+														<a href="" class="language_a">
+															<div class="language">
+																<div class="language_title">Tranning and placement cell system</div>
+															</div>
+														</a>
+													</div>
+													<div class="col-md-4 space">
+														<a href="" class="language_a">
+															<div class="language">
+																<div class="language_title">Safe and secure valt</div>
+															</div>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card custom_card">
+								<div class="card-header heading_style" id="headingfour">
+									<h2 class="mb-0">
+										<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapseTwo">Buy / Download</button>
+									</h2>
+								</div>
+								<div id="collapsefour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+									<div class="card-body card_detils">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="row">
+													<div class="col-md-4 space">
+														<a href="" class="language_a">
+															<div class="language">
+																<div class="language_title">Online photo gallary system</div>
+															</div>
+														</a>
+													</div>
+													<div class="col-md-4 space">
+														<a href="" class="language_a">
+															<div class="language">
+																<div class="language_title">Tranning and placement cell system</div>
+															</div>
+														</a>
+													</div>
+													<div class="col-md-4 space">
+														<a href="" class="language_a">
+															<div class="language">
+																<div class="language_title">Safe and secure valt</div>
+															</div>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card custom_card">
+								<div class="card-header heading_style" id="headingfour">
+									<h2 class="mb-0">
+										<button class="btn btn-link collapsed" type="button">LogOut</button>
+									</h2>
+								</div>
+								<!-- <div id="collapsefour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+									<div class="card-body card_detils">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+	</div>
+</section>
+<!-- -------------------------------	learning End	---------------------------------- -->
+
+<!-- --------------------------------	Contact	------------------------------------------ -->
+<section id="contact" class="contact">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 title_area">
+				<span>Contact With Us</span>
+				<hr />
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row project_content">
+			<div class="col-md-2"></div>
+			<div class="col-md-4">
+				<div class="address_detls">
+					<i class="fas fa-map-marker-alt"></i>
+					<span class="address">Kolkata, India</span>
+				</div>
+				<div class="address_detls">
+					<i class="fas fa-mobile-alt"></i>
+					<span class="ph_no">+91 8961613356 / +91 9123046263</span>
+				</div>
+				<div class="address_detls">
+					<i class="fas fa-envelope"></i>
+					<span class="email">info@programminhub.com</span>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="contact_form">
+					<form>
+						<label class="imp">Name</label>
+						<input type="text" name="name" placeholder="Name:">
+						<label class="imp">Email Id</label>
+						<input type="text" name="name" placeholder="Email:">
+						<label>Subject</label>
+						<input type="text" name="name" placeholder="Subject:">
+						<label class="imp">Message</label>
+						<textarea name="message" placeholder="Message"></textarea>
+
+						<input type="submit" name="send_message" value="Send">
+					</form>
+				</div>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+	</div>
+</section>
+<!-- --------------------------------	contact End	-------------------------------------- -->
+
+<!-- --------------------------------	Footer	------------------------------------------ -->
+<footer>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 foot_text">&copy; 2019 Subhajit Dey. All rights reserved.</div>
+			<div class="col-md-3"></div>
+			<div class="col-md-3">
+				<div class="social_links">
+					<a href=""><i class="fab fa-facebook-f facebook"></i></a>
+					<a href=""><i class="fab fa-linkedin-in linkedin"></i></a>
+					<a href=""><i class="fab fa-whatsapp wa"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- --------------------------------	Footer End	-------------------------------------- -->
+
+<script type="text/javascript" src="asset/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="asset/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="asset/js/custom/index_custom.js"></script>
+</body>
+</html>

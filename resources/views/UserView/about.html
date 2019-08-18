@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Programming hub</title>
+	<link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="asset/css/custom/index_custom.css">
+
+	<!-- Push this css -->
+	<link rel="stylesheet" type="text/css" href="asset/css/custom/about_me.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="asset/slider/engine1/style.css" />
+	<script type="text/javascript" src="asset/slider/engine1/jquery.js"></script>
+</head>
+<body>
+
+<!-- -------------------------------	MENU	------------------------------------------ -->
+<section class="top_menu">
+	<div class="d-none d-md-block container-fluid">
+		<div class="row">
+			<div class="col-md-4 ">
+				<div class="logo"><img src="asset/image/index.png"></div>
+			</div>
+			<div class="col-md-8">
+				<div class="menu">
+					<ul>
+						<li><a href="#" class="active">Home</a></li>
+						<li><a href="#">About Me</a></li>
+						<li><a href="#">Learning</a></li>
+						<li><a href="#project">Projects</a></li>
+						<li><a href="#contact">Contact Us</a></li>
+						<li><a href="#">Login/Registration</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- -------------------------	Responsive	------------------------------------- -->
+	<div class="d-block d-md-none container-fluid">
+		<div class="row">
+			<div class="col-sm-4 col-4">
+				<div class="logo"><img src="asset/image/index.png"></div>
+			</div>
+			<div class="col-sm-8 col-8">
+				<div class="menu">
+					<i class="fas fa-bars menu_show" onclick="return show_menu();"></i>
+					<i class="fas fa-times menu_close" onclick="return hide_menu();" style="display: none;"></i>
+				</div>
+			</div>
+			<div class="resp_menu">
+				<ul>
+					<li><a href="#" class="active">Home</a></li>
+					<li><a href="#">About Me</a></li>
+					<li><a href="#">Learning</a></li>
+					<li><a href="#project">Projects</a></li>
+					<li><a href="#contact">Contact Us</a></li>
+					<li><a href="#">Login/Registration</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- -------------------------	Responsive End	--------------------------------- -->
+</section>
+<!-- -------------------------------	MENU End	-------------------------------------- -->
+<section class="gap"></section>
+
+<!-- -------------------------------	About Me	-------------------------------------- -->
+<section class="aboutme">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<div class="row">
+					<div class="col-md-12 title_area">
+						<span>About Me</span>
+						<hr />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 details_area">
+						<img src="asset/image/index.png">
+						<span><p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p><p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p></span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+	</div>
+</section>
+<!-- -------------------------------	About Me End	---------------------------------- -->
+
+<!-- --------------------------------	Contact	------------------------------------------ -->
+<section id="contact" class="contact">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 title_area">
+				<span>Contact With Us</span>
+				<hr />
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row project_content">
+			<div class="col-md-2"></div>
+			<div class="col-md-4">
+				<div class="address_detls">
+					<i class="fas fa-map-marker-alt"></i>
+					<span class="address">Kolkata, India</span>
+				</div>
+				<div class="address_detls">
+					<i class="fas fa-mobile-alt"></i>
+					<span class="ph_no">+91 8961613356 / +91 9123046263</span>
+				</div>
+				<div class="address_detls">
+					<i class="fas fa-envelope"></i>
+					<span class="email">info@programminhub.com</span>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="contact_form">
+					<form>
+						<label class="imp">Name</label>
+						<input type="text" name="name" placeholder="Name:">
+						<label class="imp">Email Id</label>
+						<input type="text" name="name" placeholder="Email:">
+						<label>Subject</label>
+						<input type="text" name="name" placeholder="Subject:">
+						<label class="imp">Message</label>
+						<textarea name="message" placeholder="Message"></textarea>
+
+						<input type="submit" name="send_message" value="Send">
+					</form>
+				</div>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+	</div>
+</section>
+<!-- --------------------------------	contact End	-------------------------------------- -->
+
+<!-- --------------------------------	Footer	------------------------------------------ -->
+<footer>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 foot_text">&copy; 2019 Subhajit Dey. All rights reserved.</div>
+			<div class="col-md-3"></div>
+			<div class="col-md-3">
+				<div class="social_links">
+					<a href=""><i class="fab fa-facebook-f facebook"></i></a>
+					<a href=""><i class="fab fa-linkedin-in linkedin"></i></a>
+					<a href=""><i class="fab fa-whatsapp wa"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- --------------------------------	Footer End	-------------------------------------- -->
+
+<script type="text/javascript" src="asset/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="asset/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="asset/js/custom/index_custom.js"></script>
+</body>
+</html>

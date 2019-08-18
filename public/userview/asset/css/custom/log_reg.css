@@ -1,0 +1,277 @@
+.aboutme
+{
+	width: 100%;
+	height: auto;
+	background-color: #280e0e80;
+	padding: 20px 0px;
+	position: relative;
+}
+
+.details_area
+{
+	background-color: #0006;
+	padding: 20px;
+	border-radius: 20px;
+}
+
+/***************	Login tab 	*********************************/
+
+.login
+{
+	width: 100%;
+	height: auto;
+	padding: 2px;
+	background: linear-gradient(117deg, rgba(232,226,85,1) 6%, rgba(241,154,114,1) 49%, rgba(254,43,43,1) 100%);
+}
+
+.log_content
+{
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+	background-color: black;
+}
+
+.log_title
+{
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.log_title span
+{
+	border-bottom: 1.5px dotted #aea5a5;
+}
+
+.log_content input
+{
+	width: 100%;
+	background-color: transparent;
+	border: 1px solid #7cddb0;
+	border-radius: 5px;
+	color: white;
+	padding: 3px 10px;
+	margin-bottom: 10px;
+}
+
+.pwd
+{
+	margin-bottom: 0px!important;
+}
+
+.log_content button
+{
+	float: right;
+	padding: 3px 20px;
+	margin: 2px;
+	border-radius: 10px;
+	background: linear-gradient(42deg, rgba(129,210,158,1) 30%, rgba(101,148,208,1) 64%, rgba(45,210,253,1) 100%);
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+/***************	Login tab end 	****************************/
+
+/***************	Social Login tab 	*********************************/
+.social_login
+{
+	width: 100%;
+	height: auto;
+	padding: 2px;
+	background: linear-gradient(117deg, rgba(232,226,85,1) 6%, rgba(241,154,114,1) 49%, rgba(254,43,43,1) 100%);
+	margin-top: 10px;
+}
+.social_log_content
+{
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+	background-color: black;
+}
+
+.social_log_content .facebook
+{
+	padding: 3px 10px;
+	margin: 2px;
+	border-radius: 5px;
+	/*background: linear-gradient(42deg, rgba(129,210,158,1) 30%, rgba(101,148,208,1) 64%, rgba(45,210,253,1) 100%);*/
+	background: #689ec8;
+	color: white;
+	font-weight: 600;
+	text-transform: capitalize;
+	cursor: pointer;
+}
+
+.social_log_content .facebook i
+{
+	color: white;
+	margin: 0px 10px 0px 0px;
+}
+
+.social_log_content .gmail
+{
+	padding: 3px 10px;
+	margin: 2px;
+	border-radius: 5px;
+	/*background: linear-gradient(42deg, rgba(129,210,158,1) 30%, rgba(101,148,208,1) 64%, rgba(45,210,253,1) 100%);*/
+	background: #fff;
+	color: black;
+	font-weight: 600;
+	text-transform: capitalize;
+	cursor: pointer;
+}
+
+.social_log_content .gmail img
+{
+	color: white;
+	margin: 0px 10px 0px 0px;
+	width: 15%;
+}
+
+.social_log_content .twitter
+{
+	padding: 3px 10px;
+	margin: 2px;
+	border-radius: 5px;
+	/*background: linear-gradient(42deg, rgba(129,210,158,1) 30%, rgba(101,148,208,1) 64%, rgba(45,210,253,1) 100%);*/
+	background: #6cbcf3;
+	color: white;
+	font-weight: 600;
+	text-transform: capitalize;
+	cursor: pointer;
+}
+
+.social_log_content .twitter img
+{
+	color: white;
+	margin: 0px 10px 0px 0px;
+	width: 15%;
+	filter: brightness(0) invert(1);
+}
+
+.social_log_content .spotify
+{
+	padding: 3px 10px;
+	margin: 2px;
+	border-radius: 5px;
+	/*background: linear-gradient(42deg, rgba(129,210,158,1) 30%, rgba(101,148,208,1) 64%, rgba(45,210,253,1) 100%);*/
+	background: black;
+	color: #8bc34a;
+	border: 0.5px solid #625a5a;
+	font-weight: 600;
+	text-transform: capitalize;
+	cursor: pointer;
+}
+
+.social_log_content .spotify img
+{
+	color: white;
+	margin: 0px 10px 0px 0px;
+	width: 15%;
+}
+/*.social_log_content button
+{
+	float: right;
+	padding: 3px 20px;
+	margin: 2px;
+	border-radius: 10px;
+	background: linear-gradient(42deg, rgba(129,210,158,1) 30%, rgba(101,148,208,1) 64%, rgba(45,210,253,1) 100%);
+	font-weight: 600;
+	text-transform: uppercase;
+	cursor: pointer;
+}*/
+/***************	Social Login tab end 	****************************/
+
+
+/***************	registration tab 	*********************************/
+
+.reg
+{
+	width: 100%;
+	height: auto;
+	padding: 2px;
+	background: linear-gradient(117deg, rgba(232,226,85,1) 6%, rgba(241,154,114,1) 49%, rgba(254,43,43,1) 100%);
+}
+
+.reg_content
+{
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+	background-color: black;
+}
+
+.reg_title
+{
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.reg_title span
+{
+	border-bottom: 1.5px dotted #aea5a5;
+}
+
+.reg_content input
+{
+	width: 100%;
+	background-color: transparent;
+	border: 1px solid #7cddb0;
+	border-radius: 5px;
+	color: white;
+	padding: 3px 10px;
+	margin-bottom: 10px;
+}
+
+.reg_content select
+{
+	width: 100%;
+	background-color: transparent;
+	border: 1px solid #7cddb0;
+	border-radius: 5px;
+	color: #696767;
+	padding: 3px 10px;
+	margin-bottom: 5px;
+}
+
+.reg_content button
+{
+	float: right;
+	padding: 3px 20px;
+	margin: 2px;
+	border-radius: 10px;
+	background: linear-gradient(42deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 76%);
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.turms_condition input
+{
+	width: auto;
+	margin: 10px 5px 0px 0px;
+}
+
+.error
+{
+	color: red;
+	font-size: 14px;
+}
+
+.error:before
+{
+	content:"*";
+	color: red;
+	font-size: 14px;
+	padding-right: 2px;
+}
+
+/***************	Registration tab end 	****************************/
+
+@media(max-width: 320px)
+{
+	
+}

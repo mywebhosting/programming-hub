@@ -1,0 +1,570 @@
+*
+{
+	margin: 0px;
+	border: 0px;	
+	scroll-behavior: smooth;
+}
+
+body
+{
+	/*background-color: black;*/
+	color: white;
+	font-family: "Times New Roman", Times, serif;
+	background-image: url(../../image/body.jpg);
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+body:before
+{
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: #000000e6;
+	position: absolute;
+}
+
+/*body::-webkit-scrollbar
+{
+	width: 5px;
+}
+body::-webkit-scrollbar-track
+{
+	background: red;
+}
+body::-webkit-scrollbar-thumb
+{
+	background-color: cyan;
+}
+*/
+.top_menu
+{
+	width: 100%;
+	height: 100px;
+	border-bottom: 4px solid red;
+	background: url('../../image/top_menu.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	position: fixed;
+	z-index: 3;
+	float: left;
+}
+.top_menu:before
+{
+	content: "";
+	width: 100%;
+	height: 100px;
+	/*background: linear-gradient(180deg, rgba(255,0,0,0.41498597730107667) 87%, rgba(0,0,0,0) 100%);*/
+	background-color: #ff000080;
+	position: absolute;
+}
+
+.logo
+{
+	padding: 4px 0px;
+}
+
+.logo img
+{
+	width: 150px;
+	height: 90px;
+}
+
+.top_menu .menu
+{
+	width: 100%;
+	height: 100%;
+	transform: translate(0%, 40%);
+	text-align: right;
+	float: right;
+}
+
+.top_menu .menu ul li
+{
+	padding: 10px 20px;
+	display: inline;
+}
+
+.top_menu .menu ul li a
+{
+	color: inherit;
+	font-size: 17px;
+}
+
+.top_menu .menu ul li a:hover
+{
+	color: #ddc9c9;
+	text-decoration: none;
+	font-weight: 500;
+	border-bottom: 2px solid red;
+}
+
+.gap
+{
+	width: 100%;
+	height: 100px;
+	content: "";
+}
+
+.active
+{
+	text-decoration: none;
+	font-weight: 500;
+	border-bottom: 2px solid #f97c03;
+}
+
+/*************************************	Responsive menu	*************************************************/
+@media(min-width: 320px) and (max-width: 768px)  /*min-width: 575px*/
+{
+	.top_menu
+	{
+		width: 100%;
+		height: 80px;
+		border-bottom: 4px solid red;
+		background: url('../../image/top_menu.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: relative;
+		position: fixed;
+		z-index: 3;
+		float: left;
+	}
+	.top_menu:before
+	{
+		content: "";
+		width: 100%;
+		height: 80px;
+		background-color: #ff000080;
+		position: absolute;
+	}
+
+	.logo img
+	{
+		width: 110px;
+		height: 70px;
+	}
+
+	.gap
+	{
+		width: 100%;
+		height: 80px;
+		content: "";
+	}
+
+	.menu
+	{
+		cursor: pointer;
+	}
+
+	.resp_menu
+	{
+		width: 100%;
+		height: auto;
+		background-color: #0f0e0ee6;
+		border-bottom: 2px solid #ba4c4c;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		text-align: center;
+		padding: 10px 0px 0px 0px;
+		display: none;
+	}
+
+	.top_menu .resp_menu ul li
+	{
+		/*padding: 10px 20px;*/
+		/*display: inline;*/
+		list-style-type: none;
+		/*border-bottom: 1px solid white;*/
+	}
+
+	.top_menu .resp_menu ul li a
+	{
+		color: inherit;
+		font-size: 17px;
+	}
+
+	.top_menu .resp_menu ul li a:hover
+	{
+		color: #ddc9c9;
+		text-decoration: none;
+		font-weight: 500;
+		border-bottom: 2px solid red;
+	}
+}
+/*************************************	Responsive menu End	*********************************************/
+
+/**********************************	Banner **************************************************************/
+.banner
+{
+	width: 100%;
+	height: auto;
+	padding-top: 10px;
+	/*background-color: red;*/
+	position: relative;
+}
+/**********************************	Banner **************************************************************/
+
+/**********************************	Programming language ************************************************/
+.prog_language
+{
+	width: 100%;
+	min-height: 100px;
+	padding: 30px 0px;
+}
+
+.title_area
+{
+	width: 100%;
+	padding: 15px 0px;
+	text-align: center;
+	/*font-weight: bold;*/
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.title_area hr
+{
+	border: 0;
+	height: 2px;
+	background: #333;
+	background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+	background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+	background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+	background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+	width: 10%;
+	text-align:center; margin: 0 auto;
+}
+
+.language_content
+{
+	background-color: #ff00001a;
+	padding: 10px 0px;
+	position: relative;
+}
+
+.language_tab
+{
+	width: 100%;
+	height: 100px;
+	padding: 10px;
+	display: table;
+}
+
+.language_tab .language_tab_content
+{
+	width: 100%;
+	height: 100%;
+	background-color: #f003;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	/*text-transform: capitalize;*/
+	font-size: 25px;
+	overflow: hidden;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.more_language_tab_content
+{
+	width: 100%;
+	height: 100%;
+	border: 1px solid #8f4040;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	text-transform: capitalize;
+	transition: 0.5s;
+	cursor: pointer;
+	color: white;
+}
+
+.more_language_tab_content span
+{
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.language_tab .language_tab_content:hover
+{
+	transform: scale(1.1);
+	background-color: transparent;
+	border: 1px solid #8f4040;
+	transition: 0.5s;
+}
+
+.more_language_tab_content:hover
+{
+	font-size: 19px;
+	background-color: #f003;
+	border: none;
+	transition: 0.5s;
+}
+/**********************************	Programming language End ********************************************/
+
+/**********************************	project ************************************************************/
+.project
+{
+	width: 100%;
+	min-height: 100px;
+	padding: 30px 0px;
+}
+
+/*.title_area
+{
+	width: 100%;
+	padding: 15px 0px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.title_area hr
+{
+	border: 0;
+	height: 2px;
+	background: #333;
+	background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+	background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+	background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+	background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+	width: 10%;
+	text-align:center; margin: 0 auto;
+}*/
+
+.project .project_content
+{
+	background-color: #482811b3;
+	padding: 10px 0px;
+	position: relative;
+}
+
+.project_content .single_project
+{
+	content: "";
+	width: 100%;
+	height: 200px;
+	background: linear-gradient(200deg, rgba(228,80,80,1) 0%, rgba(245,124,72,0.9471988624551383) 100%);
+	display: table;
+	float: left;
+	cursor: pointer;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	transition: 0.5s;
+}
+
+.project_content .single_project:hover
+{
+	transform: scale(1.05);
+	transition: 0.5s;
+}
+
+.single_project .project_name
+{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	position: relative;
+}
+
+.single_project .project_name:hover:before
+{
+	content: "Click here for explore";
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: 92%;
+	height: 30px;
+	color: black;
+	font-weight: 600;
+	background-color: #28504b1a;
+	transition: background-color 1s;
+}
+
+.single_project .more_project_name
+{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	position: relative;
+	font-size: 25px;
+}
+
+.single_project .more_project_name:hover
+{
+	background: linear-gradient(38deg, rgba(255,255,255,0.6166666495699842) 0%, rgba(0,0,0,0.4738095067128414) 100%);
+	border-radius: 10px;
+	transform: background 0.5s;
+}
+/**********************************	Project End ********************************************************/
+
+/********************************** Contact us *********************************************************/
+
+.contact
+{
+	width: 100%;
+	min-height: 100px;
+	padding: 30px 0px;
+}
+
+.contact .project_content
+{
+	background-color: #ff00001a;
+	padding: 10px 0px;
+	position: relative;
+}
+
+.address_detls
+{
+	width: 100%;
+	padding: 5px 0px;
+}
+
+.address_detls i
+{
+	font-size: 20px;
+}
+
+.address
+{
+	width: 100%;
+	text-transform: capitalize;
+	padding: 2px 5px;
+	font-size: 18px;
+}
+
+.ph_no
+{
+	width: 100%;
+	text-transform: capitalize;
+	padding: 2px 5px;
+}
+
+.email
+{
+	width: 100%;
+	padding: 2px 5px;
+	font-size: 18px;
+}
+
+.contact_form
+{
+	width: 100%;
+	min-height: 200px;
+	background-color: #0006;
+	color: white;
+	border-radius: 10px;
+	padding: 10px 10px;
+}
+
+.contact_form label
+{
+	width: 100%;
+	margin-bottom: 0px;
+	padding-left: 10px;dd
+}
+
+.contact_form .imp:before
+{
+	content: "*";
+	color: red;
+	padding-right: 5px;
+	font-size: 15px;
+}
+
+.contact_form input[type="text"]
+{
+	width: 100%;
+	padding: 2px 10px;
+	outline: none;
+	background-color: transparent;
+	color: white;
+	border: 1px solid white;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.contact_form textarea
+{
+	width: 100%;
+	min-height: 60px;
+	max-height: 60px;
+	padding: 2px 10px;
+	outline: none;
+	background-color: transparent;
+	color: white;
+	border: 1px solid white;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.contact_form input[type="submit"]
+{
+	width: 100%;
+	font-size: 20px;
+	border-radius: 10px;
+	/*background: linear-gradient(132deg, rgba(94,196,188,0.41778709774925593) 9%, rgba(0,232,144,0.36456580923384974) 100%);*/
+	background: #f5696f66;
+	color: white;
+	font-weight: 500;
+	cursor: pointer;
+	padding: 5px 0px;
+	border: 2px solid white;
+	transition:  background 0.5s ease;
+}
+
+.contact_form input[type="submit"]:hover
+{
+	background: transparent;
+}
+
+/********************************** Contact us End *****************************************************/
+
+/**********************************	Footer ************************************************************/
+footer
+{
+	width: 100%;
+	height: 50px;
+	background-color: #0e0e0e;;
+	position: relative;
+	display: table;
+	padding: 20px 5px;
+}
+
+.foot_text
+{
+	font-size: 14px
+}
+
+.social_links
+{
+	width: 100%;
+	text-align: right;
+}
+
+.social_links .facebook
+{
+	color: #3f5c9a;
+	font-size: 16px;
+	padding: 0px 5px;
+}
+
+.linkedin
+{
+	color: #0073b0;
+	font-size: 16px;
+	padding: 0px 5px;
+}
+
+.wa
+{
+	color: #77ff6e;
+	font-size: 16px;
+	padding: 0px 5px;
+}
+
+/**********************************	Footer End ********************************************************/

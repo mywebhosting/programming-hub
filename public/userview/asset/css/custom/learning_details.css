@@ -1,0 +1,58 @@
+.aboutme
+{
+	width: 100%;
+	height: auto;
+	background-color: #280e0e80;
+	padding: 20px 0px;
+	position: relative;
+}
+
+.details_area
+{
+	background-color: #0006;
+	padding: 20px;
+	border-radius: 20px;
+}
+
+.custom_card
+{
+	margin: 10px 0px 10px 0px;
+}
+
+.heading_style
+{
+	background: linear-gradient(135deg, rgba(34,77,62,1) 6%, rgba(189,147,124,1) 100%);
+}
+
+.heading_style h2 button
+{
+	color: #c9a404;
+	font-weight: 600;
+	/*font-family: Arial, Helvetica, sans-serif;*/
+}
+
+.heading_style button:hover
+{
+	text-decoration: none;
+	color: #80c0ff;
+}
+
+.heading_style button:focus
+{
+	text-decoration: none;
+	color: #80c0ff;
+	font-weight: 500;
+}
+
+.card_detils
+{
+	color: black;
+	font-size: 17px;
+	background: linear-gradient(148deg, rgba(232,242,237,1) 6%, rgba(190,183,179,1) 100%);
+	font-family: "Times New Roman", Times, serif;
+}
+
+@media(max-width: 320px)
+{
+	
+}

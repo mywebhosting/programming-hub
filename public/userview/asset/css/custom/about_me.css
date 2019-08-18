@@ -1,0 +1,54 @@
+.aboutme
+{
+	width: 100%;
+	height: auto;
+	background-color: #280e0e80;
+	padding: 20px 0px;
+	position: relative;
+}
+
+.details_area
+{
+	background-color: #0006;
+	padding: 10px 20px;
+	border-radius: 20px;
+}
+
+.details_area img
+{
+	width: 150px;
+	height: 150px;
+	float: left;
+	margin: 10px;
+	border: 2px solid red;
+	border-radius: 80px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.details_area img:hover
+{
+	transform: scale(1.1);
+	transition: 0.5s;
+}
+
+.details_area span
+{
+	font-size: 16px;
+	text-align: justify;
+}
+
+@media(max-width: 320px)
+{
+	.details_area img
+	{
+		width: 100px;
+		height: 100px;
+		float: left;
+		margin: 10px;
+		border: 2px solid red;
+		border-radius: 80px;
+		transition: 0.5s;
+		cursor: pointer;
+	}
+}
