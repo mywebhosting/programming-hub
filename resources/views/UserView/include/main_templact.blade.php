@@ -75,21 +75,48 @@
 			</div>
 		</div>
 	</div>
+	<?php 
+		$address = $contact_details[0]->address;
+		$ph_no_encode = $contact_details[0]->phone_no;
+		$ph_no = json_decode($ph_no_encode);
+		$email_encode = $contact_details[0]->email;
+		$email = json_decode($email_encode);
+	?>
 	<div class="container-fluid">
 		<div class="row project_content">
 			<div class="d-sm-none d-md-block col-md-2"></div>
 			<div class="col-md-4 col-sm-6">
 				<div class="address_detls">
 					<i class="fas fa-map-marker-alt"></i>
-					<span class="address">Kolkata, India</span>
+					<span class="address">{{$address}}</span>
 				</div>
 				<div class="address_detls">
 					<i class="fas fa-mobile-alt"></i>
-					<span class="ph_no">+91 8961613356 / +91 9123046263</span>
+					<span class="ph_no">
+						<?php $i=0; ?>
+						@foreach($ph_no as $key => $value)
+							@if($value != "" && $i > 0)
+								{{ '/'.$value}}
+							@else
+								{{$value}}
+							@endif
+							<?php $i++; ?>
+						@endforeach
+					</span>
 				</div>
 				<div class="address_detls">
 					<i class="fas fa-envelope"></i>
-					<span class="email">info@programminhub.com</span>
+					<span class="email">
+						<?php $i=0; ?>
+						@foreach($email as $key => $value)
+							@if($value != "" && $i > 0)
+								{{ '/'.$value}}
+							@else
+								{{$value}}
+							@endif
+							<?php $i++; ?>
+						@endforeach
+					</span>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6">
@@ -122,8 +149,12 @@
 			<div class="d-sm-none d-md-block col-md-3"></div>
 			<div class="col-md-3 col-sm-6">
 				<div class="social_links">
-					<a href=""><i class="fab fa-facebook-f facebook"></i></a>
-					<a href=""><i class="fab fa-linkedin-in linkedin"></i></a>
+					<?php
+						$social_encode = $contact_details[0]->social_link;
+						$social = json_decode($social_encode);
+					?>
+					<a href="{{$social->facebook}}" target="_tab"><i class="fab fa-facebook-f facebook"></i></a>
+					<a href="{{$social->linkedin}}" target="_tab"><i class="fab fa-linkedin-in linkedin"></i></a>
 					<a href=""><i class="fab fa-whatsapp wa"></i></a>
 				</div>
 			</div>

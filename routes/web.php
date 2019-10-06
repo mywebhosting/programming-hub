@@ -53,6 +53,20 @@ Route::group(['middleware' => ['session_check']], function() {
 	Route::post('super-admin/language/chapter-edit-name','Admin\language_chapter@edit_chapter_name');
 	Route::post('super-admin/language/chapter-edit-slno','Admin\language_chapter@edit_chapter_slno');
 	Route::post('super-admin/language/chapter-edit-defination','Admin\language_chapter@edit_chapter_defination');
+
+	Route::get('super-admin/management/website-settings','Admin\WebsiteManage@basic_settings');
+	Route::post('super-admin/management/website-settings/basic-settings','Admin\WebsiteManage@basic_settings_update');
+	Route::post('super-admin/management/website-settings/social-settings','Admin\WebsiteManage@social_settings_update');
+	Route::post('super-admin/management/website-settings/contact-settings','Admin\WebsiteManage@contact_settings_update');
+	// Route::get('Customer/Balance/{CustomerID?}', 'CustomerController@createBalance');
+
+	Route::get('super-admin/management/website-extra-page','Admin\WebsiteManage@extra_page');
+	Route::post('super-admin/management/check_extra_page_name','Admin\WebsiteManage@extra_page_name_check');
+	Route::get('super-admin/management/website-extra-page/{any}','Admin\WebsiteManage@extra_page_details');
+	Route::post('super-admin/management/website-extra-page/{any}/update','Admin\WebsiteManage@extra_page_details_update');
+	/*Route::post('super-admin/management/website-extra-page/basic-settings','Admin\WebsiteManage@basic_settings_update');
+	Route::post('super-admin/management/website-extra-page/social-settings','Admin\WebsiteManage@social_settings_update');
+	Route::post('super-admin/management/website-extra-page/contact-settings','Admin\WebsiteManage@contact_settings_update');*/
 });
 
 /*****************	Admin stop 	****************************/
