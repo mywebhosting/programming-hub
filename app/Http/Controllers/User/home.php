@@ -26,6 +26,17 @@ class home extends Controller
     	/* /Show programming language */
     }
 
+    public function about_me()
+    {
+        /* Show About us */
+        $extra_page_detl = DB::table('extra_page')->select('page_title','page_image_path','seo_url','page_content')->where('page_status','1')->where('seo_url','about-me')->get()->toArray();
+        // print_r($language_detl);
+        $page = "about_me";
+        $contact_details = $this->contact_details();
+        return view('UserView/about_me', compact('page','contact_details','extra_page_detl'));
+        /* /Show About us  */
+    }
+
     public function show_more_lang()
     {
     	/* Show programming language */

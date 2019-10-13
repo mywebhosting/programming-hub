@@ -4,7 +4,7 @@ $(document).ready(function(){
 	$("#error_alert").hide();
 });
 
-$(function() {
+// $(function() {
 	var frmvalidation = {
 		'frm_name': function() {
 			var name = $('#page_title').val();
@@ -39,6 +39,17 @@ $(function() {
                 });
 			}
 		},
+		'show_image_upload': function(input){
+			if (input.files && input.files[0]) {
+				var reader = new FileReader();
+
+			reader.onload = function(e) {
+				$('#logo_prev').attr('src', e.target.result);
+			}
+
+			reader.readAsDataURL(input.files[0]);
+			}
+		},
 	}
 
 	$('#page_title_form').submit(function(){
@@ -49,4 +60,9 @@ $(function() {
 			return true;
 		return false;
 	});
-});
+// });
+
+function show_logo(name)
+{
+	frmvalidation.show_image_upload(name);
+}

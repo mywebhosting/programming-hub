@@ -109,7 +109,7 @@
                                                 @else
                                                     <button onclick="return active('{{$i}}','{{$value->id}}');" type="button" class="btn btn-warning btn-circle" title="Active now"><i class="fa fa-exclamation-triangle"></i></button>
                                                 @endif
-                                                <button onclick="window.location.href='/super-admin/language/{{ $value->title }}'" type="button" class="btn btn-warning btn-circle"><i class="fa fa-edit "></i></button>
+                                                <button onclick="window.location.href='/super-admin/management/website-extra-page/{{ $value->page_title }}'" type="button" class="btn btn-warning btn-circle"><i class="fa fa-edit "></i></button>
                                                 <button type="button" class="btn btn-danger btn-circle" onclick="return delete_lang('{{$i}}','{{$value->id}}')"><i class="fa fa-times"></i></button>
                                                 <i id="change_loader_{{$i}}" class="fa fa-spinner fa-spin" style="font-size:14px; display: none;"></i>
                                             </td>

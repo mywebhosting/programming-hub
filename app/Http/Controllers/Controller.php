@@ -93,7 +93,7 @@ $sql = "
 "
 **********************Extra page table*************************************
 
-**********************Extra page content table*****************************
+**********************Extra page content table*****************************    //Except
 $sql = "
 	CREATE TABLE extra_page_content (
 		id INT(11) PRIMARY KEY AUTO_INCREMENT,

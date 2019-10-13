@@ -183,13 +183,38 @@ class WebsiteManage extends Controller
     	$page_title = $req->post('page_title');
     	$edited = $this->admin_max_id();
 
-    	$extra_page_content = new website_extra_page_content;
+    	/*$extra_page_content = new website_extra_page_content;
     	$extra_page_content->page_content = $page_content;
     	$extra_page_content->page_id = $page_id;
     	$extra_page_content->edited_by = $edited['admin_id'];
-    	$extra_page_content->save();
+    	$extra_page_content->save();*/
 
     	// return redirect('/super-admin/language/'.$lang_title)->with('status', 'New chapter added');
+
+    	if($req->file('page_img') != "")
+		{
+			$img = $req->file('page_img');
+			$this->validate($req, [
+	            'page_img' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+	        ]);
+	        $ext = $img->getClientOriginalExtension();
+	        $img_name = time()."-extrapage-image-id-".$page_id.".".$ext;
+	        $destination = 'site_image/extra_page_image/';
+	        // $destination = public_path('site_image/logo');
+
+	        if(!File::isDirectory($destination))
+	        {
+	        	File::makeDirectory($destination,0777, true, true);
+	        }
+	        $img->move($destination, $img_name);
+	        
+	        $resp = website_extra_page_model::where('id',$page_id)->update(['page_content' => $page_content, 'page_image_path' => $destination.$img_name, 'edited_by' => $edited['admin_id']]);
+		}
+		else
+		{
+			$resp = website_extra_page_model::where('id',$page_id)->update(['page_content' => $page_content, 'edited_by' => $edited['admin_id']]);
+		}
+
     	return redirect()->back()->with('status', 'Page content updated');
     }
 }

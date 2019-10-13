@@ -4,6 +4,21 @@
 @endpush
 @section('content')
 
+<style type="text/css">
+    .site_logo
+    {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        border-radius: 50px;
+    }
+    i
+    {
+        cursor: pointer;
+    }
+</style>
+
+
 <div id="page-wrapper">
     <div class="container-fluid">
         <div class="row">
@@ -43,12 +58,26 @@
                         Edit page
                     </div>
                     <div class="panel-body">
-                        <form action="{{ $extra_page_prev_data[0]['page_title'] }}/update" method="POST">
+                        <form action="{{ $extra_page_prev_data[0]['page_title'] }}/update" method="POST" enctype="multipart/form-data">
                             {{ csrf_field() }}
                             <input type="hidden" name="page_id" value="{{$extra_page_prev_data[0]['id']}}">
                             <input type="hidden" name="page_title" value="{{$extra_page_prev_data[0]['page_title']}}">
                             <div class="panel-group" id="accordion">
                                 <textarea id="chapter_defination" name="page_content" class="editior">{{$extra_page_prev_data[0]['page_content']}}</textarea><br />
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <label>About us page image</label>
+                                        <input type="file" id="page_img" name="page_img" onchange="show_logo(this);" class="form-control">
+                                        <p class="help-block"></p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label>About us page image preview</label>
+                                        <br />
+                                        <img id="logo_prev" src="{{ URL($extra_page_prev_data[0]['page_image_path']) }}" class="site_logo">
+                                        <p class="help-block"></p>
+                                    </div>
+                                </div>
                                 <button id="edit_page_content" type="submit" class="btn btn-success">Edit Details</button>
                             </div>
                         </form>

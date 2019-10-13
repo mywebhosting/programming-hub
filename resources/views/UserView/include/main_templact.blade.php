@@ -24,7 +24,7 @@
 				<div class="menu">
 					<ul>
 						<li><a href="{{ URL('/') }}" <?php if($page == "home") echo 'class="active"'; ?>>Home</a></li>
-						<li><a href="#">About Me</a></li>
+						<li><a href="{{ URL('/about-me') }}" <?php if($page == "about_me") echo 'class="active"'; ?>>About Me</a></li>
 						<li><a href="{{ URL('/') }}#language" <?php if($page == "language") echo 'class="active"'; ?>>Language</a></li>
 						<li><a href="#project">Projects</a></li>
 						<li><a href="#contact">Contact Us</a></li>

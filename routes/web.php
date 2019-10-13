@@ -20,6 +20,7 @@ Route::get('/help', function () {
 	return view('UserView/index');
 });*/
 Route::get('/','User\home@show_home');
+Route::get('/about-me','User\home@about_me');
 Route::get('/language/more','User\home@show_more_lang');
 Route::get('/language/{any}','User\home@show_lang_details');
 Route::get('/login-registration','User\home@login_reg');
