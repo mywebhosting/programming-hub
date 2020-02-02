@@ -60,7 +60,12 @@ class home extends Controller
 
     	$page = "language";
         $contact_details = $this->contact_details();
-    	return view('UserView/learning_details', compact('page','contact_details','lang_title','language_chapter_detl'));
+
+        /* Show all languages */
+        $other_language_detl = DB::table('language')->select('language_id','title','seo_slug')->where([['active_status','1'],['language_id','<>',$lang_id]])->orderBy('serial_no','asc')->get()->toArray();
+        /* Show all languages end */
+
+    	return view('UserView/learning_details', compact('page','contact_details','lang_title','language_chapter_detl','other_language_detl'));
     }
 
     public function login_reg()

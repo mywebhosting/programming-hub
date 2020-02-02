@@ -52,7 +52,105 @@
 	font-family: "Times New Roman", Times, serif;
 }
 
+/*Change language mordal*/
+.change_language
+{
+	cursor: pointer;
+	font-size: 17px;
+	animation-name: example;
+  	animation-duration: 5s;
+  	animation-iteration-count: infinite;
+	/*text-shadow: 0px 0px 15px #f9f9f9;*/
+}
+@keyframes example
+{
+	0%   {text-shadow: 0px 0px 15px #f9f9f9;}
+	25%  {text-shadow: -4px -4px 15px #10c672;}
+	50%  {text-shadow: -4px 3px 15px #2187dd;}
+	80% {text-shadow: 8px 3px 15px #3b16f9;}
+	100% {text-shadow: 0px 0px 15px #f9f9f9;}
+}
+.modal-content
+{
+	background-color: #0c0c0ce6;
+	border-radius: 1.5rem;
+}
+.mordal_title
+{
+	text-align: center;
+}
+.close_mordal
+{
+	color: white !important;
+}
+.modal-dialog
+{
+	max-width: 800px;
+}
+/*.modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-content {
+  height: auto;
+  min-height: 100%;
+  min-width: 100%;
+  border-radius: 0;
+}*/
+
+.language_title
+{
+	width: 100%;
+	height: 120px;
+	/*background: linear-gradient(340deg, rgb(64, 0, 0) 0%, rgba(0, 0, 0, 0.75) 49%, rgba(255, 255, 255, 0.31) 100%);*/
+	background: linear-gradient(140deg, rgb(231, 2, 255) 0%, rgb(32, 188, 149) 49%, rgba(165, 68, 233, 0.31) 100%);
+	position: relative;
+	display: table;
+	border-radius: 10px;
+	padding: 15px;
+	margin: 5px 0px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.language_title:hover
+{
+	transform: scale(1.1);
+}
+
+.language_choose
+{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 25px;
+	/*color: white;*/
+	color: black;
+	font-weight: 600;
+	position: relative;
+	font-family: Marker Felt, fantasy;
+}
+
+.choose_language_a:hover
+{
+	text-decoration: none;
+}
+
+/*Change language mordal end*/
+
 @media(max-width: 320px)
 {
-	
+	.language_title
+	{
+		width: 100%;
+		margin: 5px 0px;
+	}
+
+	.language_title:hover
+	{
+		transform: scale(0.9);
+	}
 }
